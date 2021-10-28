@@ -1,0 +1,1212 @@
+{
+  "definitions": {
+    "Creds": {
+      "properties": {
+        "email": {
+          "default": "hello@world.com",
+          "description": "The user email.",
+          "type": "string"
+        },
+        "password": {
+          "default": "password123",
+          "description": "The user password.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Customer": {
+      "properties": {
+        "address": {
+          "default": "123 Test Ln",
+          "description": "The customer address.",
+          "type": "string"
+        },
+        "city": {
+          "default": "San Francisco",
+          "description": "The customer city.",
+          "type": "string"
+        },
+        "email": {
+          "default": "hello@world.com",
+          "description": "The customer email.",
+          "type": "string"
+        },
+        "first": {
+          "default": "Jan",
+          "description": "The customer first name.",
+          "type": "string"
+        },
+        "last": {
+          "default": "Smith",
+          "description": "The customer last name.",
+          "type": "string"
+        },
+        "phone": {
+          "default": "(123)456-7890)",
+          "description": "The customer phone.",
+          "type": "string"
+        },
+        "state": {
+          "default": "CA",
+          "description": "The customer state.",
+          "type": "string"
+        },
+        "zip": {
+          "default": "12345",
+          "description": "The customer zip.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Employee": {
+      "properties": {
+        "address": {
+          "default": "123 Test Ln",
+          "description": "The user address.",
+          "type": "string"
+        },
+        "city": {
+          "default": "San Francisco",
+          "description": "The user city.",
+          "type": "string"
+        },
+        "email": {
+          "default": "hello@world.com",
+          "description": "The user email.",
+          "type": "string"
+        },
+        "first": {
+          "default": "Jan",
+          "description": "The user first name.",
+          "type": "string"
+        },
+        "last": {
+          "default": "Smith",
+          "description": "The user last name.",
+          "type": "string"
+        },
+        "phone": {
+          "default": "(123)456-7890)",
+          "description": "The user phone.",
+          "type": "string"
+        },
+        "state": {
+          "default": "CA",
+          "description": "The user state.",
+          "type": "string"
+        },
+        "zip": {
+          "default": "12345",
+          "description": "The user zip.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GetCustomer": {
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        },
+        "full": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GetEmployee": {
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GetInventory": {
+      "properties": {
+        "charge": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "modified_on": {
+          "type": "string"
+        },
+        "movie_id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "upc": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GetMovie": {
+      "properties": {
+        "actors": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "director": {
+          "type": "string"
+        },
+        "genres": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "imdb": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "minutes": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "string"
+        },
+        "stock": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GetRental": {
+      "properties": {
+        "customer_id": {
+          "type": "string"
+        },
+        "customer_name": {
+          "type": "string"
+        },
+        "due_date": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "movie_ids": {
+          "type": "string"
+        },
+        "rented_on": {
+          "type": "string"
+        },
+        "titles": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Inventory": {
+      "properties": {
+        "movie_id": {
+          "default": "100",
+          "description": "The movie ID.",
+          "type": "string"
+        },
+        "upc": {
+          "default": "012345678910",
+          "description": "The movie UPC.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Movie": {
+      "properties": {
+        "actors": {
+          "default": "Casper Van Dien, Denise Richards",
+          "description": "The movie top billed actors.",
+          "type": "string"
+        },
+        "director": {
+          "default": "Paul Verhoeven",
+          "description": "The movie director.",
+          "type": "string"
+        },
+        "genres": {
+          "default": "Action, Sci-Fi, War",
+          "description": "The movie genres.",
+          "type": "string"
+        },
+        "imdb": {
+          "default": "https://www.imdb.com/title/tt0120201/",
+          "description": "The user email.",
+          "type": "string"
+        },
+        "language": {
+          "default": "English",
+          "description": "The movie language.",
+          "type": "string"
+        },
+        "minutes": {
+          "default": "129",
+          "description": "The movie runtime in minutes.",
+          "type": "string"
+        },
+        "title": {
+          "default": "Starship Troopers",
+          "description": "The movie title.",
+          "type": "string"
+        },
+        "year": {
+          "default": "1997",
+          "description": "The movie year.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Rental": {
+      "properties": {
+        "customer_id": {
+          "default": "100",
+          "description": "The customer ID.",
+          "type": "string"
+        },
+        "inventory_ids": {
+          "default": "1, 2, 3, 4",
+          "description": "The inventory IDs.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "User": {
+      "properties": {
+        "info": {
+          "properties": {
+            "first": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "last": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "info": {
+    "description": "powered by Flasgger",
+    "termsOfService": "/tos",
+    "title": "Unbreakable API Lite",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/api/customers/": {
+      "delete": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Customer removed",
+            "schema": {
+              "properties": {
+                "success": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unable to remove customer",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Customer delete endpoint"
+      },
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Customer information matching target ID",
+            "schema": {
+              "$ref": "#/definitions/GetCustomer"
+            }
+          }
+        },
+        "summary": "Customer read endpoint"
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "Customer",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Customer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Customer ID",
+            "schema": {
+              "properties": {
+                "CustomerID": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Customer create endpoint"
+      },
+      "put": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "Customer",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Customer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Customer information",
+            "schema": {
+              "$ref": "#/definitions/Customer"
+            }
+          },
+          "400": {
+            "description": "Unable to update customer",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Customer update endpoint"
+      }
+    },
+    "/api/customers/all": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "All customers in the system",
+            "schema": {
+              "properties": {
+                "Customers": {
+                  "items": {
+                    "$ref": "#/definitions/Customer"
+                  },
+                  "type": "array"
+                }
+              }
+            }
+          }
+        },
+        "summary": "All customers read endpoint"
+      }
+    },
+    "/api/employees/": {
+      "delete": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee removed",
+            "schema": {
+              "properties": {
+                "success": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unable to remove employee",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Employee delete endpoint"
+      },
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee information matching target ID",
+            "schema": {
+              "$ref": "#/definitions/GetEmployee"
+            }
+          }
+        },
+        "summary": "Employee read endpoint"
+      },
+      "put": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "Employee",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Employee"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee information",
+            "schema": {
+              "$ref": "#/definitions/Employee"
+            }
+          },
+          "400": {
+            "description": "Unable to update employee",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Employee update endpoint"
+      }
+    },
+    "/api/employees/all": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "All employees in the system",
+            "schema": {
+              "properties": {
+                "Employees": {
+                  "items": {
+                    "$ref": "#/definitions/Employee"
+                  },
+                  "type": "array"
+                }
+              }
+            }
+          }
+        },
+        "summary": "All employees read endpoint"
+      }
+    },
+    "/api/inventory/": {
+      "delete": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inventory item removed",
+            "schema": {
+              "properties": {
+                "success": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unable to remove inventory item",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Inventory item delete endpoint"
+      },
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inventory item information matching target ID",
+            "schema": {
+              "$ref": "#/definitions/GetInventory"
+            }
+          }
+        },
+        "summary": "Inventory item read endpoint"
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "Inventory",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Inventory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inventory Item ID",
+            "schema": {
+              "properties": {
+                "InventoryItemID": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Inventory item create endpoint"
+      }
+    },
+    "/api/inventory/all": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "All inventory in the system",
+            "schema": {
+              "properties": {
+                "Inventory": {
+                  "items": {
+                    "$ref": "#/definitions/Inventory"
+                  },
+                  "type": "array"
+                }
+              }
+            }
+          }
+        },
+        "summary": "All inventory read endpoint"
+      }
+    },
+    "/api/movies/": {
+      "delete": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie removed",
+            "schema": {
+              "properties": {
+                "success": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unable to remove movie",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Movie delete endpoint"
+      },
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie information matching target ID",
+            "schema": {
+              "$ref": "#/definitions/GetMovie"
+            }
+          }
+        },
+        "summary": "Movie read endpoint"
+      },
+      "post": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "Movie",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie ID",
+            "schema": {
+              "properties": {
+                "MovieID": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Movie create endpoint"
+      },
+      "put": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "in": "body",
+            "name": "Movie",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie information",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          },
+          "400": {
+            "description": "Unable to update movie",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Movie update endpoint"
+      }
+    },
+    "/api/movies/all": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "All movies in the system",
+            "schema": {
+              "properties": {
+                "Movies": {
+                  "items": {
+                    "$ref": "#/definitions/Movie"
+                  },
+                  "type": "array"
+                }
+              }
+            }
+          }
+        },
+        "summary": "All movies read endpoint"
+      }
+    },
+    "/api/rentals/current": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Rental information matching target ID",
+            "schema": {
+              "$ref": "#/definitions/GetRental"
+            }
+          }
+        },
+        "summary": "Current rental read endpoint"
+      }
+    },
+    "/api/rentals/current/all": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Current rentals in the system",
+            "schema": {
+              "properties": {
+                "Rentals": {
+                  "items": {
+                    "$ref": "#/definitions/Rental"
+                  },
+                  "type": "array"
+                }
+              }
+            }
+          }
+        },
+        "summary": "All current rentals read endpoint"
+      }
+    },
+    "/api/rentals/rent": {
+      "post": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "Rental",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Rental"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Rental ID",
+            "schema": {
+              "properties": {
+                "RentalID": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Rental rent endpoint"
+      }
+    },
+    "/api/rentals/return": {
+      "post": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Rental returned",
+            "schema": {
+              "properties": {
+                "success": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unable to return rental",
+            "schema": {
+              "properties": {
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Rental return endpoint"
+      }
+    },
+    "/api/user/": {
+      "post": {
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Creds",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Creds"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JWT access token and user information",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "401": {
+            "description": "Unable to create user",
+            "schema": {
+              "properties": {
+                "auth_error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "User create endpoint"
+      }
+    },
+    "/api/user/auth": {
+      "post": {
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Creds",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Creds"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JWT access token and user information",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "401": {
+            "description": "Unable to authenticate user",
+            "schema": {
+              "properties": {
+                "auth_error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "User authentication endpoint"
+      }
+    },
+    "/api/user/self/id": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User ID",
+            "schema": {
+              "properties": {
+                "UserID": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unable to retrieve user",
+            "schema": {
+              "properties": {
+                "auth_error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "User ID endpoint"
+      }
+    },
+    "/api/user/self/role": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Bearer < JWT >",
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User Role",
+            "schema": {
+              "properties": {
+                "UserRole": {
+                  "properties": {
+                    "role": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unable to retrieve user",
+            "schema": {
+              "properties": {
+                "auth_error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "summary": "User role endpoint"
+      }
+    }
+  },
+  "swagger": "2.0"
+}

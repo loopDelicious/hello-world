@@ -1,0 +1,2283 @@
+{
+    "info": {
+        "_postman_id": "15c5f987-5589-4e4a-8d58-f4f16817b249",
+        "name": "Unbreakable API Lite",
+        "description": "powered by Flasgger",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "api",
+            "item": [
+                {
+                    "name": "customers",
+                    "item": [
+                        {
+                            "name": "Customer delete endpoint",
+                            "id": "32e078bc-e975-43d9-b30e-4a0f047bbdab",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "customers",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "16384435-1420-42c0-803b-fb02766d2b4e",
+                                    "name": "Customer removed",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "f38f3aaf-6f7f-4a08-ad9d-2008d50009be",
+                                    "name": "Unable to remove customer",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Customer read endpoint",
+                            "id": "edc34917-1bea-4349-8f83-e3c6259caf84",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "customers",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "80a662e1-2170-4e51-9737-267e075dca26",
+                                    "name": "Customer information matching target ID",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Customer create endpoint",
+                            "id": "9579278f-35fb-4c8b-83fd-05e0661b0710",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"address\": \"123 Test Ln\",\n    \"city\": \"San Francisco\",\n    \"email\": \"hello@world.com\",\n    \"first\": \"Jan\",\n    \"last\": \"Smith\",\n    \"phone\": \"(123)456-7890)\",\n    \"state\": \"CA\",\n    \"zip\": \"12345\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/customers/",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "customers",
+                                        ""
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "41d1b79d-e647-4bd4-bce6-837219c36691",
+                                    "name": "Customer ID",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Customer update endpoint",
+                            "id": "9ff889c2-fead-4f72-ba8f-a9ae6c12b838",
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"address\": \"123 Test Ln\",\n    \"city\": \"San Francisco\",\n    \"email\": \"hello@world.com\",\n    \"first\": \"Jan\",\n    \"last\": \"Smith\",\n    \"phone\": \"(123)456-7890)\",\n    \"state\": \"CA\",\n    \"zip\": \"12345\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "customers",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "e31d691e-584c-4406-baa6-7d99ae911a13",
+                                    "name": "Customer information",
+                                    "originalRequest": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "7ccbe252-56de-4d6f-8687-d62477bfaa13",
+                                    "name": "Unable to update customer",
+                                    "originalRequest": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "All customers read endpoint",
+                            "id": "5cd38ab7-5ec1-4814-ac31-0cce002a46ac",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/customers/all",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "customers",
+                                        "all"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "c5a9d7ad-b96d-4e2e-bf1c-2fae799b327e",
+                                    "name": "All customers in the system",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/customers/all",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "customers",
+                                                "all"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "dcb95752-36a0-44b6-989c-cbe043b7c6c0"
+                },
+                {
+                    "name": "employees",
+                    "item": [
+                        {
+                            "name": "Employee delete endpoint",
+                            "id": "8d8d1a4c-db00-4628-99c0-d1516ce1b4f4",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "employees",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "e3c08398-d2ea-41e7-98df-156d71f5bde5",
+                                    "name": "Employee removed",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "employees",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "6447faa0-043b-4208-9c34-eb6b8e9a138a",
+                                    "name": "Unable to remove employee",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "employees",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Employee read endpoint",
+                            "id": "c5a50056-894e-48e0-94d4-eba1c23bae78",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "employees",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "7f8c9bd8-02ac-4eab-9fc6-e2d3c79d2220",
+                                    "name": "Employee information matching target ID",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "employees",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Employee update endpoint",
+                            "id": "f9f7fd56-4441-4ffc-9306-bffe4a3f8edc",
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"address\": \"123 Test Ln\",\n    \"city\": \"San Francisco\",\n    \"email\": \"hello@world.com\",\n    \"first\": \"Jan\",\n    \"last\": \"Smith\",\n    \"phone\": \"(123)456-7890)\",\n    \"state\": \"CA\",\n    \"zip\": \"12345\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "employees",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "21dafabc-8747-4aba-9493-756328b28cc7",
+                                    "name": "Employee information",
+                                    "originalRequest": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"address\": \"123 Test Ln\",\n    \"city\": \"San Francisco\",\n    \"email\": \"hello@world.com\",\n    \"first\": \"Jan\",\n    \"last\": \"Smith\",\n    \"phone\": \"(123)456-7890)\",\n    \"state\": \"CA\",\n    \"zip\": \"12345\"\n}"
+                                        },
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "employees",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "9a015e1f-4a6b-4917-8f7b-5091b9cf3541",
+                                    "name": "Unable to update employee",
+                                    "originalRequest": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"address\": \"123 Test Ln\",\n    \"city\": \"San Francisco\",\n    \"email\": \"hello@world.com\",\n    \"first\": \"Jan\",\n    \"last\": \"Smith\",\n    \"phone\": \"(123)456-7890)\",\n    \"state\": \"CA\",\n    \"zip\": \"12345\"\n}"
+                                        },
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/employees/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "employees",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "All employees read endpoint",
+                            "id": "fad5eb10-bf1d-486d-b3e5-97fe3aa4c9f6",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/employees/all",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "employees",
+                                        "all"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "8c882fc3-de5f-478e-b5c0-ac42738f0f18",
+                                    "name": "All employees in the system",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/employees/all",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "employees",
+                                                "all"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "fa785f52-5537-4628-b6d1-acb97655b908"
+                },
+                {
+                    "name": "inventory",
+                    "item": [
+                        {
+                            "name": "Inventory item delete endpoint",
+                            "id": "ea2d3908-f87e-45cd-8112-dfeaa5526baa",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/inventory/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "inventory",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "f457e2f5-869f-490b-8c2e-56bd624f1c15",
+                                    "name": "Inventory item removed",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/inventory/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "inventory",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "c3a3a80d-0095-4fe8-9835-e9a5d7714617",
+                                    "name": "Unable to remove inventory item",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/inventory/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "inventory",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Inventory item read endpoint",
+                            "id": "b69e8000-7ce1-4024-9ced-fe851569dfca",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/inventory/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "inventory",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "1c0e1310-6aca-4aa2-9392-5b9a8afb9f9e",
+                                    "name": "Inventory item information matching target ID",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/inventory/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "inventory",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Inventory item create endpoint",
+                            "id": "5ca35d0f-6beb-41dc-bd06-eeb6fd75f3ab",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"movie_id\": \"100\",\n    \"upc\": \"012345678910\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/inventory/",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "inventory",
+                                        ""
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "da538b6f-843b-425f-8dc6-b7303b25abb2",
+                                    "name": "Inventory Item ID",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"movie_id\": \"100\",\n    \"upc\": \"012345678910\"\n}"
+                                        },
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/inventory/",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "inventory",
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "All inventory read endpoint",
+                            "id": "e9423604-4c1b-459f-9dd4-0dde20739b9c",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/inventory/all",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "inventory",
+                                        "all"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "8c9f3d5c-f604-40f0-a867-820305f8c291",
+                                    "name": "All inventory in the system",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/inventory/all",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "inventory",
+                                                "all"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "2ff097d9-3f21-4e29-8dd9-9d54c064ae40"
+                },
+                {
+                    "name": "movies",
+                    "item": [
+                        {
+                            "name": "Movie delete endpoint",
+                            "id": "ba83f282-a0af-4a60-82b7-f7ea89b8d8e3",
+                            "request": {
+                                "method": "DELETE",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "movies",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "aa9777fc-0963-4b1d-acf8-be2d90f74ca7",
+                                    "name": "Movie removed",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "4aa58337-2dce-4837-925a-618f37361e09",
+                                    "name": "Unable to remove movie",
+                                    "originalRequest": {
+                                        "method": "DELETE",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Movie read endpoint",
+                            "id": "2ca4a670-b9b8-4e88-8af1-502a854f43dd",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "movies",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "e0e286f0-cf87-4f0d-b169-3b377e4e45b1",
+                                    "name": "Movie information matching target ID",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Movie create endpoint",
+                            "id": "40f3fca8-3658-4d83-abf7-bdc41579ff39",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"actors\": \"Casper Van Dien, Denise Richards\",\n    \"director\": \"Paul Verhoeven\",\n    \"genres\": \"Action, Sci-Fi, War\",\n    \"imdb\": \"https://www.imdb.com/title/tt0120201/\",\n    \"language\": \"English\",\n    \"minutes\": \"129\",\n    \"title\": \"Starship Troopers\",\n    \"year\": \"1997\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/movies/",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "movies",
+                                        ""
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "d597d94b-d2e8-40ed-8531-fdf93a5e9f93",
+                                    "name": "Movie ID",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Movie update endpoint",
+                            "id": "e114cf32-bab2-45e0-878d-7918880eb49d",
+                            "request": {
+                                "method": "PUT",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"actors\": \"Casper Van Dien, Denise Richards\",\n    \"director\": \"Paul Verhoeven\",\n    \"genres\": \"Action, Sci-Fi, War\",\n    \"imdb\": \"https://www.imdb.com/title/tt0120201/\",\n    \"language\": \"English\",\n    \"minutes\": \"129\",\n    \"title\": \"Starship Troopers\",\n    \"year\": \"1997\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "movies",
+                                        ""
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "037b95bd-de18-4fc2-80b2-95491592c5b3",
+                                    "name": "Movie information",
+                                    "originalRequest": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "f2e3d4ef-9686-451e-8397-f3ecb92c5b6c",
+                                    "name": "Unable to update movie",
+                                    "originalRequest": {
+                                        "method": "PUT",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                ""
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "All movies read endpoint",
+                            "id": "0df52209-cf3f-43a0-bc3c-3cd7b0c28817",
+                            "request": {
+                                "method": "GET",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/movies/all",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "movies",
+                                        "all"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "2a658a1a-5fe6-40dc-aed5-bb94be32f791",
+                                    "name": "All movies in the system",
+                                    "originalRequest": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/movies/all",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "movies",
+                                                "all"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "3e6ca1c8-0a98-427b-b387-42b2e8df85fc"
+                },
+                {
+                    "name": "rentals",
+                    "item": [
+                        {
+                            "name": "current",
+                            "item": [
+                                {
+                                    "name": "Current rental read endpoint",
+                                    "id": "ba4046dd-b528-4a78-85fc-614cb265f20e",
+                                    "request": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/rentals/current?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "rentals",
+                                                "current"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344",
+                                                    "description": "(Required) "
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "1c5d6d98-b090-4c2e-a9c8-4676535f4d34",
+                                            "name": "Rental information matching target ID",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/rentals/current?id=-46631344",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "rentals",
+                                                        "current"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "id",
+                                                            "value": "-46631344"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "*/*"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "All current rentals read endpoint",
+                                    "id": "145021a9-4059-40bb-9838-35a9125f9c71",
+                                    "request": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/rentals/current/all",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "rentals",
+                                                "current",
+                                                "all"
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "8a35cdaa-30f8-48cd-8dbc-756e6257d52d",
+                                            "name": "Current rentals in the system",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/rentals/current/all",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "rentals",
+                                                        "current",
+                                                        "all"
+                                                    ]
+                                                }
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "*/*"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "3688aa6f-ae19-49eb-8562-ccc7414875fb"
+                        },
+                        {
+                            "name": "Rental rent endpoint",
+                            "id": "25b8e436-1a3c-4daa-98bc-38da215a43cc",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"customer_id\": \"100\",\n    \"inventory_ids\": \"1, 2, 3, 4\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/rentals/rent",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "rentals",
+                                        "rent"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "f116f006-c131-4e3e-ab49-dbd705aad5ca",
+                                    "name": "Rental ID",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"customer_id\": \"100\",\n    \"inventory_ids\": \"1, 2, 3, 4\"\n}"
+                                        },
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/rentals/rent",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "rentals",
+                                                "rent"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Rental return endpoint",
+                            "id": "229e30a7-55fc-40ad-b3cd-37760a2caa98",
+                            "request": {
+                                "method": "POST",
+                                "header": [],
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/rentals/return?id=-46631344",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "rentals",
+                                        "return"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "id",
+                                            "value": "-46631344",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "4c9ada77-4e78-467f-8269-a358bfc7e9ed",
+                                    "name": "Rental returned",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/rentals/return?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "rentals",
+                                                "return"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "271be2cc-3ab3-4aff-bf04-d2633b9e54eb",
+                                    "name": "Unable to return rental",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [
+                                            {
+                                                "description": "(Required) Bearer < JWT >",
+                                                "key": "Authorization",
+                                                "value": "fugiat proident dolore ullamco"
+                                            }
+                                        ],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/rentals/return?id=-46631344",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "rentals",
+                                                "return"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "key": "id",
+                                                    "value": "-46631344"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "3c0a588c-a337-4b86-8b3f-070117b06c78"
+                },
+                {
+                    "name": "user",
+                    "item": [
+                        {
+                            "name": "self",
+                            "item": [
+                                {
+                                    "name": "User ID endpoint",
+                                    "id": "b159c1f9-e7d9-4690-84e7-8f85310638df",
+                                    "request": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/user/self/id",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "user",
+                                                "self",
+                                                "id"
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "8e4c5077-b560-4afd-8070-f1ee5b478c4c",
+                                            "name": "User ID",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [
+                                                    {
+                                                        "description": "(Required) Bearer < JWT >",
+                                                        "key": "Authorization",
+                                                        "value": "fugiat proident dolore ullamco"
+                                                    }
+                                                ],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/user/self/id",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "user",
+                                                        "self",
+                                                        "id"
+                                                    ]
+                                                }
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "*/*"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        },
+                                        {
+                                            "id": "4bfb7588-264d-4ae9-b051-592bc4a4fa1d",
+                                            "name": "Unable to retrieve user",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [
+                                                    {
+                                                        "description": "(Required) Bearer < JWT >",
+                                                        "key": "Authorization",
+                                                        "value": "fugiat proident dolore ullamco"
+                                                    }
+                                                ],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/user/self/id",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "user",
+                                                        "self",
+                                                        "id"
+                                                    ]
+                                                }
+                                            },
+                                            "status": "Unauthorized",
+                                            "code": 401,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "*/*"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "User role endpoint",
+                                    "id": "a0f21bc3-9dda-43ea-bfdb-2ec7c363b03d",
+                                    "request": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/user/self/role",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "user",
+                                                "self",
+                                                "role"
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "166d312c-5b6a-4de0-a91a-30cb015ca1bc",
+                                            "name": "User Role",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [
+                                                    {
+                                                        "description": "(Required) Bearer < JWT >",
+                                                        "key": "Authorization",
+                                                        "value": "fugiat proident dolore ullamco"
+                                                    }
+                                                ],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/user/self/role",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "user",
+                                                        "self",
+                                                        "role"
+                                                    ]
+                                                }
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "*/*"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        },
+                                        {
+                                            "id": "c51fb356-2546-4792-9b4a-b4837e609f85",
+                                            "name": "Unable to retrieve user",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": [
+                                                    {
+                                                        "description": "(Required) Bearer < JWT >",
+                                                        "key": "Authorization",
+                                                        "value": "fugiat proident dolore ullamco"
+                                                    }
+                                                ],
+                                                "url": {
+                                                    "raw": "{{baseUrl}}/api/user/self/role",
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "path": [
+                                                        "api",
+                                                        "user",
+                                                        "self",
+                                                        "role"
+                                                    ]
+                                                }
+                                            },
+                                            "status": "Unauthorized",
+                                            "code": 401,
+                                            "_postman_previewlanguage": "text",
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "*/*"
+                                                }
+                                            ],
+                                            "cookie": [],
+                                            "responseTime": null,
+                                            "body": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": "bbc9358b-a7c4-4011-b574-516e42ee715a"
+                        },
+                        {
+                            "name": "User create endpoint",
+                            "id": "65a5a5f4-06a9-4855-9dfa-8b4b23f54929",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"email\": \"hello@world.com\",\n    \"password\": \"password123\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/user/",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "user",
+                                        ""
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "d085b059-6e90-4969-a570-cdf1b1c051dc",
+                                    "name": "JWT access token and user information",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/user/",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "user",
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "0ffe9487-364a-42c0-a684-09bbd55a9558",
+                                    "name": "Unable to create user",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/user/",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "user",
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        },
+                        {
+                            "name": "User authentication endpoint",
+                            "id": "a041590b-e91d-4682-8d17-a108eb1ab68b",
+                            "request": {
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"email\": \"hello@world.com\",\n    \"password\": \"password123\"\n}"
+                                },
+                                "url": {
+                                    "raw": "{{baseUrl}}/api/user/auth",
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "user",
+                                        "auth"
+                                    ]
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "bba362e0-469c-4c03-a24c-5b4cb4ebdb03",
+                                    "name": "JWT access token and user information",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/user/auth",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "user",
+                                                "auth"
+                                            ]
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                },
+                                {
+                                    "id": "efef3e8a-ed7e-4470-be6e-c6020e0d0881",
+                                    "name": "Unable to authenticate user",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "{{baseUrl}}/api/user/auth",
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "path": [
+                                                "api",
+                                                "user",
+                                                "auth"
+                                            ]
+                                        }
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "_postman_previewlanguage": "text",
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "*/*"
+                                        }
+                                    ],
+                                    "cookie": [],
+                                    "responseTime": null,
+                                    "body": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "e7dd4ed5-e393-44a8-9607-fa5c41d24532"
+                }
+            ],
+            "id": "4095bbb7-295a-4fb5-8a4d-a40f3472a6dc"
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "c6ffbfc0-be4c-448f-9db6-63c44185bc39",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "0773314b-a3db-4fdb-be5e-9c4bd11eccd0",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "id": "8b3820de-90a5-4423-95b2-22172be23d28",
+            "key": "baseUrl",
+            "value": "https://www.unbreakableapi.com"
+        }
+    ]
+}
